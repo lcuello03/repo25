@@ -42,6 +42,7 @@ git_backup ()
     request_error='<title>Error</title>'
     response_error='ok:false'
     response_error_with_space='ok: false'
+    echo post_response
     # Validates response for createAutoSave call
     case $post_response in 
     *"$request_error"*)
